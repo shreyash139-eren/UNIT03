@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #container{
+            padding-left: 20%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            justify-content: space-between;
+            align-items: center;
+        }
+        #one{
+            width: 70%;
+            height: 80%;
+            border: 2px solid;
+            text-align: center;
+        }
+        #two{
+            width: 70%;
+            height: 80%;
+            border: 2px solid;
+            text-align: center;
+        }
+        h3{
+            padding: 10px;
+        }
+        #input{
+            padding: 40px;
+        }
+        li{
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+<div id="input">
+    <input type="text" id="add">
+    <button onclick="Add()">Add Task</button>
+    <button onclick="sorting()" id="sort">Sort A-Z</button>
+   
+</div>
+<h4 id="total">Tasks: <span>0</span></h4>
+<h4 id="comp">Completed: <span>0</span></h4>
+<h4 id="incomp">Incomplete: <span>0</span></h4>
+    <div id="container">
+      
+    <div id="two">
+        <h3><u>Incomplete</u></h3>
+        <ul  id="incomplete"></ul>
+    </div>
+
+    <div id="one">
+        <h3><u>Completed</u></h3>
+        <ul id="complete"></ul>
+    </div>
+    </div>
+    
+    <script src="AdvancedTaskManagerwithEventDelegationandFiltering.js"></script>
+</body>
+</html>

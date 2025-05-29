@@ -1,0 +1,13 @@
+
+*{
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+}
+#data{
+    border: 1px solid rgb(8, 5, 5);
+    padding: 10px;
+}
+th,td{
+    border: 1px solid;
+}

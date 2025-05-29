@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+    <link rel="stylesheet" href="LibraryManagementSystem.css">
+    
+</head>
+<body>
+    <h1><u>Library Management System</u></h1>
+    <div id="books">
+        <h2><u>Add Book</u></h2>
+        <label for="title">Title : </label>
+        <input type="text" id="title" placeholder="Enter title">
+        <label for="author">Author : </label>
+        <input type="text" id="author" placeholder="Enter authors name">
+        <label for="genre">Genre : </label>
+        <input type="text" id="genre" placeholder="Enter genre">
+        <label for="year">Year : </label>
+        <input type="number" id="year" placeholder="Enter publication year">
+        <label for="available">Available : </label>
+        <select name="" id="available">
+            <option value="">Available</option>
+            <option value="true">True</option>
+            <option value="false">False</option>
+        </select>
+        <button onclick="Add()">Add Book</button>
+        <button>Edit Book</button>
+    </div>
+    <div id="error"></div>
+    <!-- adding members -->
+    <div id="member">
+        <h2><u>Add Member</u></h2>
+        <label for="name">Name :</label>
+        <input type="text" id="name" placeholder="Enter name">
+        <label for="date">Membership Date : </label>
+        <input type="date" id="date">
+        <label for="active">Status</label>
+        <select name="" id="active">
+            <option value="">Membership Status</option>
+            <option value="true">Active</option>
+            <option value="false">Inactive</option>
+        </select>
+        <button onclick="Member()">Add Member</button>
+        <button>Edit Member</button>
+    </div>
+    <div id="error1"></div>
+    <script src="LibraryManagementSystem.js"></script>
+</body>
+</html>

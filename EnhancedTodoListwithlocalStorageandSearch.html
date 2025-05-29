@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="search" type="text" placeholder="search task">
+    <button id="searchbtn" onclick="search()">Search</button>
+    <input type="text" id="input" placeholder="enter task">
+    <button id="add" onclick="add()">Add Task</button>
+    <button id="load" onclick="Display()">All tasks</button>
+    <ul id="list"></ul>
+
+</body>
+</html>
+<script>
+      function Display(){
+            let tasks=JSON.parse(localStorage.getItem("tasks"))
+            let list= document.getElementById("list")
+            list.innerHTML=''
+            tasks.forEach((ele,i)=>{
+                let li=document.createElement("li")
+             li.innerHTML=`
+            <input type="checkbox">${tasks}
+            <button onclick="remove(${i})">Remove</button>`
+                li.innerText=ele
+                if(li.innerText.length>0){
+                     list.appendChild(li)
+         }
+            })
+        }
+
+    function add(){
+            let input=document.getElementById("input").value
+            let tasks=JSON.parse(localStorage.getItem("tasks"))|| []
+            let list=document.getElementById("list")
+
+            tasks.push(input)
+
+            localStorage.setItem("tasks",JSON.stringify(tasks))
+            
+         let li=document.createElement("li")
+        
+        
+         li.innerText=input
+         if(li.innerText.length>0){
+            list.appendChild(li)
+         }
+
+        
+    }
+
+  
+
+</script>

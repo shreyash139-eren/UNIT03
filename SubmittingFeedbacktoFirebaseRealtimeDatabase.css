@@ -1,0 +1,26 @@
+*{
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    background-color: rgba(127, 255, 212, 0.355);
+    margin: auto;
+    width: 50%;
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+#list{
+    width: 50%;
+    height: 100px;
+    background-color: rgba(58, 43, 226, 0.486);
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+#user, #Feedback{
+    padding: 3px;
+
+}

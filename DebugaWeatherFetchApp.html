@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="city" placeholder="City">
+    <button id="weatherForm">Submit</button>
+    <div id="weather"></div>
+</body>
+</html>
+<script>
+    const weatherForm = document.getElementById('weatherForm');
+    const cityInput = document.getElementById('city');
+    const weatherDisplay = document.getElementById('weather');
+
+weatherForm.addEventListener('click', (e) => {
+  e.preventDefault();
+  const city = cityInput.value;
+  if(city.length>4){
+  fetchWeather(city);
+  }
+  else{
+    alert("Please enter a valid city name")
+  }
+});
+
+async function fetchWeather(city) {
+try {
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=YOUR_API_KEY`;
+  const response = await fetch(url);
+  const data = await response.json();
+  weatherDisplay.textContent = `Temperature in ${city}: ${data.main}°C`;
+} catch (error) {
+  weatherDisplay.textContent= `${error} : Failed to load data, Please try again letter. Thank you.`
+}
+}
+
+
+</script>
