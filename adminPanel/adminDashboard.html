@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body onload="loadProducts(role, user)">
+  <header>
+    <div id="nav">
+        <p><span id="adminName"></span> (admin)</p>
+        <button id="logout-btn">LogOut</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="container"></div>
+  </main>
+
+    <footer>
+      <h2>Add Product</h2>
+        <div id="footer">
+    
+    <input id="title" type="text" placeholder="Enter title">
+    <input id="price" type="number" placeholder="Enter price">
+    <input type="text" id="imageUrl" placeholder="Enter image URL">
+   
+  </div>
+  <div id="button">
+  <button id="add">Add Product</button>
+  </div>
+    </footer>
+
+    <script type="module" src="auth.js"></script>
+    <script type="module" src="dashboard.js"></script>
+</body>
+</html>
