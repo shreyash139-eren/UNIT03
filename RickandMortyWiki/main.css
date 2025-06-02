@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#loading{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav{
+    height: 65px;
+    background-color: rgb(24, 24, 24);
+}
+
+#nav img{
+    width: 8vw;
+    height: 8vh;
+}
+#nav label,#nav select{
+}
+label{
+    color: #08d90b;
+    font-size: 20px;
+}
+
+select{
+    border-radius: 50px;
+    text-align: center;
+    font-size: 16px;
+    background-color: rgb(24, 24, 24) ;
+    color: white;
+}
+
+#container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 20px;
+    gap: 6vw;
+}
+#container div{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    text-align: center;
+    height: 70vh;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+#container div:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+}
+p{
+    margin: 20px;
+    font-size: 20px;
+    color: rgb(43, 43, 43);
+}
+#container div img{
+    margin-top: 50px;
+    border-radius: 50px;
+}
+#button{
+    text-align: center;
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: #08d90b;
+}
+#button button{
+    padding: 15px 20px;
+    margin: 0 100px;
+    border-radius: 30px;
+    font-size: 16px;
+    border: none;
+    background-color: #28A745 ;
+    color: white;
+}
+#button button:hover{
+    background-color: #08d90b;
+    cursor: pointer;
+}
+

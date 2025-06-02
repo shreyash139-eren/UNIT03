@@ -54,6 +54,7 @@ function updatePage(newPage) {
 
 })
 
+
   rapidClicks()
   showImage(CurrPage);
 
@@ -77,11 +78,9 @@ let clicks=[]
 
 let prev = document.getElementById("prev").addEventListener("click", () => {
   updatePage(CurrPage - 1);
-  prevClick++;
 });
 let next = document.getElementById("next").addEventListener("click", () => {
   updatePage(CurrPage + 1);
-  nextClick++;
   console.log(nextClick);
 });
 showImage(CurrPage);
