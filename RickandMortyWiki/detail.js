@@ -46,6 +46,6 @@ setInterval(() => {
     const minute=date.getMinutes()
     const hour=date.getHours()
 
-    clock.innerText=`${hour}:${minute}:${second} - ${weekDay} - ${day} ${month} ${year}`
+    clock.innerText=`${hour}:${minute}:${second} - ${weekDay} - ${day+1} ${month} ${year}`
 
 }, 1000);
