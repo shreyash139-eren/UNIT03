@@ -33,4 +33,4 @@ After this I added a fully functional clock on the footer of every page.
 
 
         Netlify Link;-
-        https://rickandmortywikki.netlify.app/
+        https://rick-and-mortyy2.netlify.app/
