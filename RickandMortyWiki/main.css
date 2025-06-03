@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(61, 61, 61);
 }
 #loading{
     height: 100vh;
@@ -9,32 +13,35 @@
     justify-content: center;
     align-items: center;
 }
-#nav{
-    height: 65px;
+nav{
+    width: 100%;
+    height: 10vh;
     background-color: rgb(24, 24, 24);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#nav img{
+nav img{
     width: 8vw;
     height: 8vh;
 }
-#nav label,#nav select{
-}
-label{
-    color: #08d90b;
-    font-size: 20px;
-}
 
-select{
-    border-radius: 50px;
+
+nav select{
+    height: 5vh;
+    width: 8vw;
+    border-radius: 10px;
     text-align: center;
     font-size: 16px;
     background-color: rgb(24, 24, 24) ;
     color: white;
+    margin-right: 2vw;
+    cursor: pointer;
 }
 
 #container{
-    width: 90%;
+    width: 90vw;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -47,9 +54,10 @@ select{
     height: 70vh;
     margin-top: 20px;
     border-radius: 50px;
+    background-color: #c6d4c6;
 }
 #container div:hover{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(20, 231, 45, 0.25) 0px 54px 55px, rgba(7, 245, 27, 0.12) 0px -12px 30px, rgba(58, 214, 6, 0.12) 0px 4px 6px, rgba(3, 229, 15, 0.17) 0px 12px 13px, rgba(37, 228, 4, 0.09) 0px -3px 5px;
     cursor: pointer;
 }
 p{
@@ -84,4 +92,50 @@ a{
     background-color: #08d90b;
     cursor: pointer;
 }
-
+#clock{
+    height: 10vh;
+    width: 100vw;
+    background-color: black;
+}
+#random{
+    padding: 10px 22px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    margin-left: 60vw;
+    background-color:#28A745;
+    color: white;
+    cursor: pointer;
+}
+#random:hover{
+    background-color: #08d90b;
+}
+#clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clock p{
+    color: rgb(167, 163, 163);
+    font-size: 20px;
+}
+@media (width<1250px) {
+    #container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (width<700px){
+    #container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    nav img{
+        width: 100px;
+        height: 80px;
+    }
+    nav select{
+        margin-right: 20px;
+    }
+    #random{
+        margin-left: 0;
+    }
+}

@@ -8,18 +8,16 @@
 </head>
 <body>
    <header>
-    <div id="nav">
        <nav>
             <img src="https://wallpapers.com/images/hd/rick-and-morty-portal-zldslxft1dufbcia.jpg">
-        <label for="">Theme : </label>
-            <select name="" id="">
-                <option value="light">Light</option>
-                <option value="dark">Dark</option>
+            <button id="random">Random</button>
+            <select name="" id="theme">
+                <option value="">Theme</option>
+                <option value="#DCDCDC">Light</option>
+                <option value="light-dark(#333b3c, #efefec)">Dark</option>
             </select>
        </nav>
-    </div>
    </header>
-  
    <main>
     <div id="loading">Loading...</div>
     <div id="container"></div>
@@ -29,7 +27,11 @@
     </div>
    </main>
 
-   <footer></footer>
+   <footer>
+    <div id="clock">
+        <p>Time : <span id="time"></span></p>
+    </div>
+   </footer>
 
     <script src="main.js"></script>
 </body>
