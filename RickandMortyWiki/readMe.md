@@ -29,3 +29,8 @@ After this I added a fully functional clock on the footer of every page.
         Started working on the website without a proper roadmap due to which my functions kept fetching errors, after some attempts I sat and made a roadmap and started working and made progress, got stuck while implementing see details functions then my cousin gave me a hint, at first i didn't got it but when Iwent through implementing it, I understood where he was pointing and successfully implemented the function.
 
         The other challenge for me was to add the clock, I knew about the new Date() function but didn't knew how to get hours, minutes, day, year etc. seperately for this I'll not lie, I asked ChatGpt about it and got the idea from there of how to destructure Date() function but I had the Idea of implementing a functional clock by using setInterval and Span tag, did the same set the interval of 1000m/s and got the fully fuctional clock.
+
+
+
+        Netlify Link;-
+        https://rickandmortywikki.netlify.app/
