@@ -17,7 +17,7 @@ body{
 #detail div{
     margin-top: 30px;
     width: 40vw;
-    min-width: 400px;
+    min-width: 420px;
     padding: 20px 10px;
     text-align: center;
     border-radius: 50px;
@@ -46,8 +46,8 @@ nav{
 }
 
 nav img{
-    width: 8vw;
-    height: 8vh;
+    height: 80px;
+    width: 100px;
 }
 
 
