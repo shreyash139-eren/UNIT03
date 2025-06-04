@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="https://www.freepnglogos.com/uploads/star-wars-logo-3.png" alt="logo">
+            <select name="" id="theme">
+                <option value="">Theme</option>
+                <option value="#DCDCDC">Light</option>
+                <option value="light-dark(#333b3c, #efefec)">Dark</option>
+            </select>
+            <button id="random">Random</button>
+            <p><span id="userName"></span></p>
+            <button id="logout-btn">LogOut</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="container"></div>
+        <div id="button">
+            <button id="prev">&#8592 Prev</button>
+            <button id="next">Next &#8594</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Time : <span id="time"></span></p>
+    </footer>
+
+
+    <script type="module" src="auth.js"></script>
+    <script type="module" src="dashboard.js"></script>
+</body>
+</html>

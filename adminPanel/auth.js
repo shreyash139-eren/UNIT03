@@ -26,33 +26,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
       try {
         await signInWithEmailAndPassword(auth, email, password);
-        
+
         //trying
-        let currentUser=null
+        let currentUser = null;
 
-        onAuthStateChanged(auth, async(user)=>{
-     
-         if(user){
-           currentUser=user
-           
-           const userDoc=await getDoc(doc(db,"users",user.uid))
-           if(userDoc.exists()){
-             const role=userDoc.data().role
-            
-             if(role==="user"){
-              window.location.href="userDashboard.html"
-             }
-             else if(role==="admin"){
-               window.location.href="adminDashboard.html"
-             }
-     
-           }
-         }
-         else{
-           window.location.href="login.html"
-         }
-        })
+        onAuthStateChanged(auth, async (user) => {
+          if (user) {
+            currentUser = user;
 
+            const userDoc = await getDoc(doc(db, "users", user.uid));
+            if (userDoc.exists()) {
+              const role = userDoc.data().role;
+
+              if (role === "user") {
+                window.location.href = "userDashboard.html";
+              } else if (role === "admin") {
+                window.location.href = "adminDashboard.html";
+              }
+            }
+          } else {
+            window.location.href = "login.html";
+          }
+        });
       } catch (error) {
         alert("Incorrect email or password!");
         document.getElementById("loginMessage").innerText = error.message;
@@ -86,5 +81,4 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-
 });

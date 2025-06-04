@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(44, 43, 43);
+}
+#container{
+    width: 90vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 8vh;
+    margin-bottom: 10vh;
+}
+#container div{
+    background-color: rgb(107, 106, 106);
+    height: 80vh;
+    text-align: center;
+    border-radius: 50px;
+}
+#container div img{
+    width: 85%;
+    height: 80%;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+#container div p{
+    font-size: 18px;
+}
+#container div a{
+    text-decoration: none;
+    color: #38d259;
+}
+#container div a:hover{
+    color: rgb(128, 252, 3);
+}
+#container div:hover{
+    box-shadow: rgb(170, 169, 169) 0px 20px 30px -10px;
+    cursor: pointer;
+}
+
+nav{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+nav img{
+    height: 50px;
+    width: 100px;
+    margin-left: 20px;
+}
+nav button{
+    width: 100px;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-right: 5vh;
+}
+nav select{
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    text-align: center; 
+    margin-right: 55vw;
+}
+nav p{
+    color: aliceblue;
+    width: 150px;
+    font-size: 20px;
+}
+#button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#button button{
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 20px;
+}
+#prev{
+  margin-left: 70px;
+}
+
+#next{
+    margin-right: 70px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+button:hover,select:hover{
+    cursor: pointer;
+}
+button{
+    background-color: #38D2D2;
+    background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #388dd2;
+}
+@media (width<1200px){
+    #container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    nav p{
+        display: none;
+    }
+   nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   }
+   nav select{
+    margin-right: 20vw;
+   }
+
+}
+@media (width<800px){
+    #container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #theme{
+        display: none;
+    }
+       
+}
