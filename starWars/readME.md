@@ -13,4 +13,4 @@ Any challenges faced and how you overcame them:-
 
 
     Deployed link:-
-    
+    https://starwarschara.netlify.app/
