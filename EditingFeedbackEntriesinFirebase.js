@@ -55,7 +55,7 @@
        feedArray.forEach((ele)=>{
         message.innerText=""
         if(ele.UserName===nameField){
-            let feedField=document.getElementById("Feedback").value=ele.feedback
+            feedField=document.getElementById("Feedback").value=ele.feedback
         }
        })
     
