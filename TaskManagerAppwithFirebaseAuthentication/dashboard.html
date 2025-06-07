@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Task Manager</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+<div id="nav">
+    <nav>
+        <button id="logout-btn">LogOut</button>
+        <h1>Task Manager</h1>
+        <select name="" id="filter">
+            <option value="">Filter</option>
+            <option value="true">Completed</option>
+            <option value="false">Incomplete</option>
+        </select>
+    </nav>
+</div>
+
+<div id="addTask">
+<h1>Add Task</h1>
+<input type="text" id="title" placeholder="Enter Title">
+<textarea name="Description" id="descrip" placeholder="Description"></textarea>
+<button id="add">Add Task</button>
+</div>
+
+<h1 id="h1">Tasks</h1>
+<h3 id="h3">Completed Count : <span id="count">0</span></h3>
+
+<div id="Tasks"></div>
+    <script type="module" src="dashboard.js"></script>
+</body>
+</html>

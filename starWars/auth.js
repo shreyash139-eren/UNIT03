@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         alert("Registration Successful! Please log in.");
-        console.log(2);
+        
         window.location.href = "index.html";
       } catch (error) {
         const Message = document.getElementById("reg-mes");
