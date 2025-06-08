@@ -238,17 +238,19 @@ document.addEventListener("DOMContentLoaded", async () => {
   document.getElementById("filter").addEventListener("change", async()=>{
     const list=document.getElementById("Tasks")
     list.innerHTML=""
+    const Id = localStorage.getItem("id");
+
     let Sort=document.getElementById("filter").value
     const res=await fetch("https://taskmanager-98384-default-rtdb.asia-southeast1.firebasedatabase.app/task.json")
     const data=await res.json()
     const arr=Object.entries(data).map(([id,task])=>({id,...task}))
     const sorted=arr.filter((ele)=>{
-        if(Sort==="false"){
+        if(Sort==="false" && ele.user===Id){
             return ele.completed===false
         }
-        else if(Sort==="true"){
+        else if(Sort==="true" && ele.user===Id){
             return ele.completed===true
-        }else{
+        }else if(Sort==="" && ele.user===Id){
           return ele
         }
     })

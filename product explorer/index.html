@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="fetchData()">
+
+    <div id="nav">
+        <nav>
+            <input type="text" id="search" placeholder="Search">
+            <select name="" id="sort">
+                <option value="">Sort Products</option>
+                <option value="asc">Price: Low to High</option>
+                <option value="dsc">Price: High to Low</option>
+                <option value="alpha">A-Z</option>
+            </select>
+
+            <select name="" id="filter">
+                <option value="">Filter</option>
+                <option value="men's clothing">Men</option>
+                <option value="electronics">Electronics</option>
+                <option value="jewelery">Jewelery</option>
+                <option value="women's clothing">Women</option>
+            </select>
+        </nav>
+    </div>
+    <div id="loading" style="display: none;">Loading...</div>
+    
+    <div id="container"></div>
+
+    <div id="button">
+        <button id="prev">Prev</button>
+        <p>Page : <span  id="curr">1</span></p>
+        <button id="next">Next</button>
+    </div>
+
+    <footer></footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
